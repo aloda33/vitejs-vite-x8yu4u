@@ -13,10 +13,9 @@ return (
   <div>
   {data ? (
   <ul>
-  {data.map(item => (
-  <li
-  key={item.id}>{item.name}</li>
-  ))}
+    {data.map(item => (
+    <li key={item.id}>{item.title}</li>
+    ))}
   </ul>
 ) : (
 <p>Loading...</p>
